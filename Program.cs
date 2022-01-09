@@ -25,7 +25,9 @@ namespace Homeework_05
             Console.ReadKey();
         }
 
-        //Метод разделения строки на слова
+        /// <summary>
+        /// Метод разделения строки на слова
+        /// </summary>
         static List<string> SplitSentence(string sentence)
         {
             char[] execeptionSymbols = new char[]
@@ -38,7 +40,9 @@ namespace Homeework_05
             return words;
         }
 
-        //Метод перестановки слов в предложении
+        /// <summary>
+        /// Метод перестановки слов в предложении
+        /// </summary>
         static string ReverseSentence(List<string> words)
         {
             Stack<string> reverseWords = new Stack<string>();
@@ -53,7 +57,9 @@ namespace Homeework_05
             return reverseSentence;
         }
 
-        //Метод вывода
+        /// <summary>
+        /// Метод вывода
+        /// </summary>
         static void PrintWords(List<string> words)
         {
             for (int i = 0; i < words.Count; i++)
